@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonToolbar, IonTitle, IonContent, IonCard, IonButtons, IonBackButton, IonHeader, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonButton } from '@ionic/react'
+import { IonToolbar, IonTitle, IonContent, IonCard, IonButtons, IonBackButton, IonHeader, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonButton, IonAvatar } from '@ionic/react'
 
 
 
@@ -16,8 +16,11 @@ const ItemDetailPage = ({ match, history, goBack }) => (
         <IonContent>
             <IonCard>
                 <IonCardHeader>
-                    <IonCardSubtitle>A tasty fruit!</IonCardSubtitle>
                     <IonCardTitle>{match.params.id}</IonCardTitle>
+                    <IonCardSubtitle>A tasty fruit!</IonCardSubtitle>
+                    <IonAvatar>
+                        <img src={`/images/${match.params.id}.jpg`}   />
+                    </IonAvatar>
                 </IonCardHeader>
             </IonCard>
         </IonContent>
