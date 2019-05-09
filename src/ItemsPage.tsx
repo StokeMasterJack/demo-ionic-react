@@ -1,9 +1,9 @@
 import React from 'react';
 import { IonToolbar, IonList, IonTitle, IonContent, IonItem, IonLabel, IonHeader, IonListHeader, IonAvatar } from '@ionic/react'
+import * as H from "history";
 
 
-
-const ItemsPage = ({ history }) => (
+const ItemsPage = ({ history }:{ history:H.History }) => (
     <>
         <IonHeader>
             <IonToolbar color="primary">
